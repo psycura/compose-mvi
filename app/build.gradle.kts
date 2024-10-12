@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -60,6 +61,13 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+
+    implementation("com.arkivanov.decompose:decompose:2.1.2")
+    implementation("com.arkivanov.decompose:extensions-compose-jetpack:2.1.2")
+    implementation("com.arkivanov.mvikotlin:mvikotlin:3.2.1")
+    implementation("com.arkivanov.mvikotlin:mvikotlin-main:3.2.1")
+    implementation("com.arkivanov.mvikotlin:mvikotlin-logging:3.2.1")
+    implementation("com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:3.2.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
